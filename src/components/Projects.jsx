@@ -11,7 +11,7 @@ const Projects = () => {
 
                     <li className='text-base tracking-widest leading-10 font-light text-justify'>
                         <Link className="font-semibold underline" to='https://github.com/sharafdin/yonode' target='_blank'>Yonode</Link>
-                        <span> : is a Node.js toolkit that streamlines your workflow, enabling youto craft efficient server solutions rapidly.</span>
+                        <span> : is a Node.js toolkit that streamlines your workflow, enabling you to craft efficient server solutions rapidly.</span>
                     </li>
 
                     <li className='text-base tracking-widest leading-10 font-light text-justify'>

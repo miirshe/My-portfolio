@@ -10,11 +10,11 @@ const Contact = () => {
                 <div className='w-full space-y-4 mt-10'>
                     <p className='space-x-2 tracking-widest'>
                         <span className='text-lg font-medium'>Email</span> :
-                        <small className='text-base'> miirshe@gmail.com</small>
+                        <Link to="https://mailto:miirshe@gmail.com" target='_blank'  className='text-base'> miirshe@gmail.com</Link>
                     </p>
                     <p className='space-x-2 tracking-widest'>
                         <span className='text-lg font-medium'>Phone</span> :
-                        <small className='text-base'> 618302314</small>
+                        <Link to='https://Wa.me/+252618302314' target='_blank' className='text-base'>252618302314</Link>
                     </p>
                 </div>
                 <div className='w-full flex flex-row justify-start items-center gap-5 mt-5'>
