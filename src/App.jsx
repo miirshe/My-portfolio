@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { Home } from './Exports'
-
+import { SkeletonTheme } from 'react-loading-skeleton'
 const App = () => {
   return (
     <>
@@ -9,6 +9,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
       </Routes>
+      <SkeletonTheme/>
     </>
   )
 }

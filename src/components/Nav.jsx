@@ -2,6 +2,9 @@ import React from 'react'
 import { FaGithub, FaLinkedin, FaLongArrowAltRight, FaTwitter } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import Dots from './Dots';
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+import proile from "/images/mirshe.jpg"
 const Nav = () => {
     return (
         <div className='w-full mt-16'>
@@ -24,8 +27,11 @@ const Nav = () => {
                     </div>
                     <button className='px-4 py-2 rounded shadow bg-blue-600 text-white'><Link to="./miirshe.pdf" target='_blank' className='inline'>Dowload CV <FaLongArrowAltRight className='ml-3 inline' size={20} /> </Link> </button>
                 </div>
-                <div className='w-full rounded-full border-4 border-slate-50 shadow'>
-                    <img className='w-full bg-cover  object-center rounded-full' src="./images/mirshe.jpg" alt="miirshe" />
+                <div  className='w-full rounded-full border-4 border-slate-50 shadow'>
+                    {
+                        proile ? <img className='w-full bg-cover  object-center rounded-full' src={proile} alt="miirshe" />
+                        : <Skeleton className='w-full rounded-full'/>
+                    }
                 </div>
             </div>
             <Dots />
